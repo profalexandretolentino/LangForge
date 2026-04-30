@@ -42,7 +42,7 @@ graph TD
     NestJS
     Shared[Shared Packages/Types]
     end
-
+```
 ## 🧱 Tech Stack | Tecnologias
 
 Resource,Tech,Why? / Por quê?
@@ -64,7 +64,7 @@ packages/
   └── shared/     # Common Types and Utils
 ```
 
-## 📚 Study System
+## 📚 Study System | Sistema de Estudo
 
 * Vocabulary
 * Kanji
@@ -73,7 +73,7 @@ packages/
 
 ---
 
-## 📈 Roadmap
+## 📈 Roadmap | Cronograma
 
 * [x] Initial Monorepo Setup
 * [ ] MVP (daily tasks + progress)
@@ -85,7 +85,7 @@ packages/
 
 ---
 
-## 🛠️ Installation
+## 🛠️ Installation | Instalação
 
 ```bash id="2a8tqm"
 npm install
@@ -94,12 +94,12 @@ npm run dev
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing | Contribuição
 
 Open for learning and contributions.
 
 ---
 
-## 📄 License| Licença
+## 📄 License | Licença
 
 AGPL-3.0 - Protecting business logic and encouraging open-source contributions.
