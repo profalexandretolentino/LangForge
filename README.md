@@ -15,19 +15,6 @@
 この プロジェクトは <ruby>私<rt>わたし</rt></ruby>の <ruby>毎日<rt>まいにち</rt></ruby>の ルーチンを <ruby>助<rt>たす</rt></ruby>けます。
 
 ---
-
-## 🏗️  System Architecture | Arquitetura do Sistema
-```mermaid
-graph TD
-    User((User)) --> Web[Frontend: Next.js/React]
-    Web --> API[Backend: NestJS]
-    API --> DB[(PostgreSQL)]
-    API --> Services[Study Logic / Anki Sync]
-    
-    style Web fill:#f9f,stroke:#000,stroke-width:2px
-    style API fill:#bbf,stroke:#000,stroke-width:2px
-    style DB fill:#dfd,stroke:#333,stroke-width:2px
-```
     ## 🧬 System Architecture | Arquitetura do Sistema
 ```mermaid
 graph TD
@@ -36,6 +23,8 @@ graph TD
     NestJS -->|Auth| JWT[JWT/Auth Service]
     NestJS -->|Queries| Postgres[(PostgreSQL DB)]
     NestJS -->|AI Logic| OpenAI[GPT-4/LLM Integration]
+    NestJS --> Services[Study Logic / Anki Sync]
+    
     
     subgraph "Monorepo Structure"
     NextJS
