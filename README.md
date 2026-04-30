@@ -26,8 +26,8 @@
 ## 🧬 System Architecture | Arquitetura do Sistema
 ```mermaid
 graph TD
-    User((User)) -->|Interacts| NextJS-React[Next.js Frontend]
-    NextJS -->|API Calls| NestJS-NodeJS[Nest.js Backend]
+    User((User)) -->|Interacts| NextJS[Next.js-React Frontend]
+    NextJS -->|API Calls| NestJS[Nest.js-NodeJS Backend]
     NestJS -->|Auth| JWT[JWT/Auth Service]
     NestJS -->|Queries| Postgres[(PostgreSQL DB)]
     NestJS -->|AI Logic| OpenAI[GPT-4/LLM Integration]
