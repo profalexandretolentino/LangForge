@@ -81,7 +81,7 @@ packages/
 ## 🛠️ Installation | Instalação
 ```bash
 # Clone the repository | Clonar o repositório
-git clone [https://github.com/SEU_USUARIO/LangForge.git](https://github.com/SEU_USUARIO/LangForge.git)
+git clone [https://github.com/SEU_USUARIO/LangForge.git]
 
 # Install dependencies | Instalar dependências
 npm install
@@ -97,4 +97,4 @@ Open for learning and contributions. | Aberto para aprendizado e contribuições
 
 ## 📄 License | Licença
 
-AGPL-3.0 - Protecting business logic and encouraging open-source contributions.
+AGPL-3.0 - Protecting business logic and encouraging open-source contributions.| Protegendo a lógica de negócios e incentivando contribuições de código aberto.
