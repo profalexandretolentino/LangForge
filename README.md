@@ -16,7 +16,7 @@
 
 ---
 
-## 🏗️ Architecture | Arquitetura
+## 🏗️  System Architecture | Arquitetura do Sistema
 ```mermaid
 graph TD
     User((User)) --> Web[Frontend: Next.js/React]
@@ -27,14 +27,30 @@ graph TD
     style Web fill:#f9f,stroke:#333,stroke-width:2px
     style API fill:#bbf,stroke:#333,stroke-width:2px
     style DB fill:#dfd,stroke:#333,stroke-width:2px
+```
+    ## 🧬 System Architecture | Arquitetura do Sistema
+```mermaid
+graph TD
+    User((User)) -->|Interacts| NextJS[Next.js Frontend]
+    NextJS -->|API Calls| NestJS[NestJS Backend]
+    NestJS -->|Auth| JWT[JWT/Auth Service]
+    NestJS -->|Queries| Postgres[(PostgreSQL DB)]
+    NestJS -->|AI Logic| OpenAI[GPT-4/LLM Integration]
+    
+    subgraph "Monorepo Structure"
+    NextJS
+    NestJS
+    Shared[Shared Packages/Types]
+    end
 
-## 🧱 Tech Stack
+## 🧱 Tech Stack | Tecnologias
 
 Resource,Tech,Why? / Por quê?
-Framework,Next.js (React),EN: Best for SEO and performance. / PT: Melhor para SEO e performance.
-Backend,NestJS,EN: Robust modular architecture. / PT: Arquitetura modular robusta.
-Database,PostgreSQL,EN: Relational data for study tracking. / PT: Dados relacionais para controle de estudo.
-Monorepo,NPM Workspaces,EN: Scalable code sharing. / PT: Compartilhamento de código escalável.
+- **Frontend:** [Next.js](https://nextjs.org/) (React): EN: Best for SEO and performance. / PT: Melhor para SEO e performance.
+- **Backend:** [NestJS](https://nestjs.com/) (Node.js): EN: Robust modular architecture. / PT: Arquitetura modular robusta.
+- **Database | Banco de Dados:** [PostgreSQL](https://www.postgresql.org/) EN: Relational data for study tracking. / PT: Dados relacionais para controle de estudo.
+- **Language | Linguagem:** TypeScript
+- ** Monorepo,NPM Workspaces,EN: Scalable code sharing. / PT: Compartilhamento de código escalável.
 
 ---
 
