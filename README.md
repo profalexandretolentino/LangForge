@@ -95,6 +95,6 @@ npm run dev
 Open for learning and contributions. | Aberto para aprendizado e contribuições.
 
 
-## 📄 License| Licença
+## 📄 License | Licença
 
 AGPL-3.0 - Protecting business logic and encouraging open-source contributions.
