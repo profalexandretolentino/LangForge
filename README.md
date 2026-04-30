@@ -23,7 +23,7 @@ graph TD
     NestJS -->|Auth| JWT[JWT/Auth Service]
     NestJS -->|Queries| Postgres[(PostgreSQL DB)]
     NestJS -->|AI Logic| OpenAI[GPT-4/LLM Integration]
-    NestJS -->[Study Logic| Services / Anki Sync]
+    
     
     
     subgraph "Monorepo Structure"
