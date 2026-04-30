@@ -24,8 +24,8 @@ graph TD
     API --> DB[(PostgreSQL)]
     API --> Services[Study Logic / Anki Sync]
     
-    style Web fill:#f9f,stroke:#333,stroke-width:2px
-    style API fill:#bbf,stroke:#333,stroke-width:2px
+    style Web fill:#f9f,stroke:#000,stroke-width:2px
+    style API fill:#bbf,stroke:#000,stroke-width:2px
     style DB fill:#dfd,stroke:#333,stroke-width:2px
 ```
     ## 🧬 System Architecture | Arquitetura do Sistema
