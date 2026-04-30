@@ -33,20 +33,21 @@ graph TD
     Shared[Shared Packages/Types]
     end
 ```
-## 🧱 Tech Stack | Tecnologias
+🧱 Tech Stack | Tecnologias
 
-Resource,Tech,Why? / Por quê?
-- **Frontend:** [Next.js](https://nextjs.org/) (React): EN: Best for SEO and performance. / PT: Melhor para SEO e performance.
-- **Backend:** [NestJS](https://nestjs.com/) (Node.js): EN: Robust modular architecture. / PT: Arquitetura modular robusta.
-- **Database | Banco de Dados:** [PostgreSQL](https://www.postgresql.org/) EN: Relational data for study tracking. / PT: Dados relacionais para controle de estudo.
-- **Language | Linguagem:** TypeScript
-- ** Monorepo,NPM Workspaces,EN: Scalable code sharing. / PT: Compartilhamento de código escalável.
+    Frontend: Next.js (React) | EN: Best for SEO. / PT: Melhor para SEO.
 
+    Backend: NestJS (Node.js) | EN: Robust modular architecture. / PT: Arquitetura modular robusta.
+
+    Database | Banco de Dados: PostgreSQL | EN: Relational data tracking. / PT: Rastreamento de dados relacionais.
+
+    Language | Linguagem: TypeScript
+
+    Monorepo: NPM Workspaces | EN: Scalable code sharing. / PT: Compartilhamento de código escalável.
 ---
 
 ## 📦 Project Structure
-
-```id="x02dtq"
+```
 apps/
   ├── api/        # NestJS backend (Core Logic)
   └── web/        # Next.js frontend (React UI)
@@ -55,7 +56,7 @@ packages/
 ```
 
 ## 📚 Study System | Sistema de Estudo
-
+```
 * Vocabulary
 * Kanji
 * Reading
@@ -64,7 +65,7 @@ packages/
 ---
 
 ## 📈 Roadmap | Cronograma
-
+```
 * [x] Initial Monorepo Setup
 * [ ] MVP (daily tasks + progress)
 * [ ] JLPT structured content
@@ -77,7 +78,7 @@ packages/
 
 ## 🛠️ Installation | Instalação
 
-```bash id="2a8tqm"
+```bash
 npm install
 npm run dev
 ```
@@ -85,11 +86,12 @@ npm run dev
 ---
 
 ## 🤝 Contributing | Contribuição
-
+```
 Open for learning and contributions.
 
 ---
 
 ## 📄 License | Licença
-
+```
 AGPL-3.0 - Protecting business logic and encouraging open-source contributions.
+```
