@@ -11,21 +11,27 @@
 
 ### 🇯🇵 <ruby>日本語<rt>にほんご</rt></ruby> (JLPT N5/N4 Level)
 これは <ruby>言語<rt>げんご</rt></ruby>の <ruby>学習<rt>がくしゅう</rt></ruby>の ための プラットフォームです。  
-<ruby>毎日<rt>まいにち</rt></ruby> <ruby>日本語<rt>にほんご</rt></ruby>を <ruby>勉強<rt>べんきょう</rt></ruby>して、JLPTの ために <ruby>頑張<rt>がんば</rt></ruby>ります。  
-この プロジェクトは <ruby>私<rt>わたし</rt></ruby>の <ruby>毎日<rt>まいにち</rt></ruby>の ルーチンを <ruby>助<rt>たす</rt></ruby>けます。
+<ruby>毎日<rt>まいにち</rt></ruby> <ruby>日本語<rt>にほんご</rt></ruby>を <ruby>勉強<rt>べんきょう</rt></ruby>して、JLPTの ために <ruby>頑張<rt>gan-ba</rt></ruby>ります。  
+この プロジェクトは <ruby>私<rt>wa-tashi</rt></ruby>の <ruby>毎日<rt>mai-nichi</rt></ruby>の ルーチンを <ruby>助<rt>tasu</rt></ruby>けます。
 
 ---
-    ## 🧬 System Architecture | Arquitetura do Sistema
+
+## 🎯 Purpose | Propósito
+**EN:** It serves as a personal tool to ensure linguistic mastery  
+
+**PT:** Serve como uma ferramenta pessoal para garantir a fluência linguística.
+
+---
+
+## 🧬 System Architecture | Arquitetura do Sistema
 ```mermaid
 graph TD
     User((User)) -->|Interacts| NextJS[Next.js Frontend]
-    NextJS -->|API Calls| NestJS[NestJS Backend]
+    NextJS -->|API Calls| NestJS[Next.js Backend]
     NestJS -->|Auth| JWT[JWT/Auth Service]
     NestJS -->|Queries| Postgres[(PostgreSQL DB)]
     NestJS -->|AI Logic| OpenAI[GPT-4/LLM Integration]
     NestJS -->|Study Logic| Services[Anki Sync]
-    
-    
     
     subgraph "Monorepo Structure"
     NextJS
@@ -33,7 +39,7 @@ graph TD
     Shared[Shared Packages/Types]
     end
 ```
-🧱 Tech Stack | Tecnologias
+## 🧱 Tech Stack | Tecnologias
 
     Frontend: Next.js (React) | EN: Best for SEO. / PT: Melhor para SEO.
 
@@ -44,9 +50,8 @@ graph TD
     Language | Linguagem: TypeScript
 
     Monorepo: NPM Workspaces | EN: Scalable code sharing. / PT: Compartilhamento de código escalável.
----
 
-## 📦 Project Structure
+## 📦 Project Structure | Estrutura do Projeto
 ```
 apps/
   ├── api/        # NestJS backend (Core Logic)
@@ -54,18 +59,16 @@ apps/
 packages/
   └── shared/     # Common Types and Utils
 ```
-
 ## 📚 Study System | Sistema de Estudo
-```
-* Vocabulary
-* Kanji
-* Reading
-* Daily consistency tracking
 
----
+* Vocabulary | Vocabulário
+* Kanji | Ideogramas
+* Reading | Leitura
+* Daily consistency tracking | Controle de consistência diária
+
 
 ## 📈 Roadmap | Cronograma
-```
+
 * [x] Initial Monorepo Setup
 * [ ] MVP (daily tasks + progress)
 * [ ] JLPT structured content
@@ -74,24 +77,24 @@ packages/
 * [ ] Mobile app (React Native)
 * [ ] Premium features
 
----
 
 ## 🛠️ Installation | Instalação
-
 ```bash
+# Clone the repository | Clonar o repositório
+git clone [https://github.com/SEU_USUARIO/LangForge.git](https://github.com/SEU_USUARIO/LangForge.git)
+
+# Install dependencies | Instalar dependências
 npm install
+
+# Run development mode | Rodar modo desenvolvimento
 npm run dev
 ```
 
----
-
 ## 🤝 Contributing | Contribuição
-```
-Open for learning and contributions.
 
----
+Open for learning and contributions. | Aberto para aprendizado e contribuições.
 
-## 📄 License | Licença
-```
+
+## 📄 License| Licença
+
 AGPL-3.0 - Protecting business logic and encouraging open-source contributions.
-```
