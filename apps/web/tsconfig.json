@@ -18,8 +18,9 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@langforge/shared": ["../../packages/shared/src/index"]
     }
   },
   "include": [

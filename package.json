@@ -1,27 +1,21 @@
 {
   "name": "langforge-monorepo",
+  "version": "1.0.0",
   "private": true,
+  "packageManager": "npm@11.12.1",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build"
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "clean": "turbo clean && rm -rf node_modules"
   },
-  "version": "1.0.0",
-  "description": "![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL_3.0-blue.svg) ![Node Version](https://img.shields.io/badge/node-%3E%3D20.0.0-green.svg) ![NestJS](https://img.shields.io/badge/backend-NestJS-red.svg) ![Next.js](https://img.shields.io/badge/frontend-Next.js-black.svg) ![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/profalexandretolentino/LangForge.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/profalexandretolentino/LangForge/issues"
-  },
-  "homepage": "https://github.com/profalexandretolentino/LangForge#readme"
+  "devDependencies": {
+    "turbo": "latest",
+    "typescript": "^5.0.0",
+    "prettier": "^3.0.0"
+  }
 }
